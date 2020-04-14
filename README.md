@@ -25,6 +25,7 @@ Prior to working here you need to have exported from genome-studio the CNV file 
 
 This script is using the R package: GWASdata 
 Gogarten S (2019). GWASdata: Data used in the examples and vignettes of the GWASTools package. R package version 1.24.0.
+
 Which uses GWASTools with reference Gogarten 2012: https://www.ncbi.nlm.nih.gov/pubmed/23052040
 
 There are 5 files in this folder:
