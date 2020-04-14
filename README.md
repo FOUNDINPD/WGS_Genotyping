@@ -30,9 +30,15 @@ Which uses GWASTools with reference Gogarten 2012: https://www.ncbi.nlm.nih.gov/
 There are 5 files in this folder:
 
 Genetic_integrity_prep.sh => This is the script to prepare the data
+
 Genetic_integrity_run_all.sh => This is the script to run all samples
+
 plot_per_chip.R => This file is needed to run each sample
+
 anno_file_neurochip.txt => This file is needed for the annotation of the NeuroChip content
+
 scan_file.txt => This file is needed for the input of the plot_per_chip.R script
+
+Example.pdf => Example of how output pdf looks like
 
 
