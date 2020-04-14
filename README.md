@@ -1,3 +1,4 @@
+# WGS_Genotyping
 # Code for processing WGS and Genotyping data for FOUNDIN-PD project
 
 ## April 2020
