@@ -18,6 +18,11 @@
 
 ### Comparison with WGS
 
+Comparison_with_WGS.sh => This is the script to prepare the data
+
+plot_differences_between_WGS_and_chip.R => This file is needed to run each chromosome for all samples
+
+Example.pdf => Example of how output pdf looks like
 
 ### Genetic integrity
 Assessing the Genetic integrity of genotyping data based on B allele frequency and Log R ratio.
