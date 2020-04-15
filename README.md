@@ -13,10 +13,13 @@
 ### Prioritization phase1 WGS
 
 
-### Prioritization phase2 GENO
+### Prioritization phase2 genotypes (GENO)
+This was done by:
+a) comparing the day 0 (IPSC state) and day 65 (DA neuron state) with the blood derived donor WGS
+b) inspection of each day 0 (IPSC state) and day 65 (DA neuron state) for large genomic events
 
-
-### Comparison with WGS
+### A) Comparison with WGS
+Comparing overlapping variants between WGS data and NeuroChip and reporting mismatching alleles. Mismatches are plotted and if a large strecht of mismatches occurs then this will be easily identifiable in the generated pdfs.
 
 Comparison_with_WGS.sh => This is the script to prepare the data
 
@@ -24,7 +27,7 @@ plot_differences_between_WGS_and_chip.R => This file is needed to run each chrom
 
 Example.pdf => Example of how output pdf looks like of chromosome 4 with an significant genomic event present
 
-### Genetic integrity
+### B) Genetic integrity
 Assessing the Genetic integrity of genotyping data based on B allele frequency and Log R ratio.
 Prior to working here you need to have exported from genome-studio the CNV file more details are in Genetic_integrity_prep.sh
 
