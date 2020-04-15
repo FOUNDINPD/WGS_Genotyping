@@ -14,7 +14,7 @@ Downloaded PPMI WGS from LONI database and subset samples with IPSC line availab
 Using PLINK (v1.9) (Chang et al. 2015) to process the data.
 plink --bfile wgshg38ppmi.july2018 --keep PPMI_IPSC.txt --make-bed --out PPMI_IPSC_WGS
 
-One sample has no WGS available = patno: PPMI57869
+One sample has no WGS available
 
 'Ancestry needs to be within 6SD of Europeans'
 # following general workflow from https://github.com/neurogenetics/GWAS-pipeline
