@@ -6,17 +6,25 @@
 ### Couple folders in this repository
 
 - Prioritization phase1 WGS
-- Prioritization phase2 GENO
 - Comparison with WGS
 - Genetic integrity
 
 ### Prioritization phase1 WGS
+Using the WGS samples were prioritized based on:
+
+A) WGS needs to be available
+
+B) Ancestry needs to be within 6SD of Europeans
+
+C) No relatedness among included individuals
 
 
 ### Prioritization phase2 genotypes (GENO)
 This was done by:
 a) comparing the day 0 (IPSC state) and day 65 (DA neuron state) with the blood derived donor WGS
+
 b) inspection of each day 0 (IPSC state) and day 65 (DA neuron state) for large genomic events
+
 
 ### A) Comparison with WGS
 Comparing overlapping variants between WGS data and NeuroChip and reporting mismatching alleles. Mismatches are plotted and if a large strecht of mismatches occurs then this will be easily identifiable in the generated pdfs.
