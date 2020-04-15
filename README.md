@@ -12,11 +12,11 @@
 ### Prioritization phase1 WGS
 Using the WGS samples were prioritized based on:
 
-A) WGS needs to be available
+- WGS needs to be available
 
-B) Ancestry needs to be within 6SD of Europeans
+- Ancestry needs to be within 6SD of Europeans
 
-C) No relatedness among included individuals
+- No relatedness among included individuals
 
 
 ### Prioritization phase2 genotypes (GENO)
