@@ -4,7 +4,7 @@
 
 Phase1: Initial prioritization of PPMI (n=135) including criteria:
 - WGS needs to be available
-- Ancestry needs to be within 6SD of Europeans
+- Genetid Ancestry needs to be homogeneous for subsequent analysis and therefore within 6SD of Europeans
 - No relatedness among included individuals
 
 Most code is based on general GWAS scripts from here: https://github.com/neurogenetics/GWAS-pipeline
@@ -16,7 +16,7 @@ plink --bfile wgshg38ppmi.july2018 --keep PPMI_IPSC.txt --make-bed --out PPMI_IP
 
 One sample has no WGS available
 
-'Ancestry needs to be within 6SD of Europeans'
+'Genetid Ancestry needs to be homogeneous for subsequent analysis and therefore within 6SD of Europeans'
 # following general workflow from https://github.com/neurogenetics/GWAS-pipeline
 # Merge data with HapMap populations (Consortium and †The International HapMap Consortium 2003)
 plink --bfile wgshg38ppmi.july2018 --extract HAPMAP_hg19_new.bim --make-bed --out hapmap_snps_only 
