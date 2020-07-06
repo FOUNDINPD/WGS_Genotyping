@@ -56,7 +56,7 @@ sed -i 's/_day0//g' FOUNDIN_plink_day0only.fam
 # Then start merging with WGS
 plink --bfile FOUNDIN_plink_day0only wgshg38ppmi.july2018 --out merge1 --make-bed
 # Of these, 8 are new, while 126 are present in the base dataset.
-# Makes sense because PPMISI57869 doesn't have WGS
+# Makes sense because PPMISIXXXXX doesn't have WGS
 # flip bad alleles not matching to WGS
 plink --bfile FOUNDIN_plink_day0only --flip merge1-merge.missnp --make-bed --out FOUNDIN_plink_day0only2 
 # merge again to check allele for allele flips
@@ -69,10 +69,10 @@ plink --bfile wgshg38ppmi.july2018 \
 --extract FOUNDIN_plink_day0only3.bim --make-bed --out genomes_stripped_to_neurochip --keep FOUNDIN_plink_day0only3.fam
 # make sure all samples are what they are supposed to be and all sample switches are corrected...
 # for example corrections can be:
-sed -i 's/PPMISI4099/temp/g' FOUNDIN_plink_day0only3.fam 
-sed -i 's/PPMISI57670/temp2/g' FOUNDIN_plink_day0only3.fam
-sed -i 's/temp/PPMISI57670/g' FOUNDIN_plink_day0only3.fam 
-sed -i 's/temp2/PPMISI4099/g' FOUNDIN_plink_day0only3.fam
+sed -i 's/PPMIXXXXX/temp/g' FOUNDIN_plink_day0only3.fam 
+sed -i 's/PPMIXXXXX/temp2/g' FOUNDIN_plink_day0only3.fam
+sed -i 's/temp/PPMIXXXXX/g' FOUNDIN_plink_day0only3.fam 
+sed -i 's/temp2/PPMIXXXXX/g' FOUNDIN_plink_day0only3.fam
 # then do final merge
 # 7 (no merge) Report mismatching nonmissing calls.
 # FIRST PASS
@@ -91,10 +91,10 @@ cut -d " " -f 2 merge_NeuroChip_PPMI_snplis.diff | sort | uniq -c | sort -nk1 > 
 awk '{if ($1 > 42) print $2;}' variant_failure_count.txt > variant_failure_count_EXCLUDE.txt
 ## this is the file with the times each SAMPLE is error
 cut -d " " -f 3 merge_NeuroChip_PPMI_snplis.diff | sort | uniq -c | sort -nk1 > PPMIID_failure_count.txt
-# most mismatches found N=138087 for this sample: PPMISI53423, but known problem with donor WGS so all good.
+# most mismatches found N=138087 for this sample: PPMIXXXXX, but known problem with donor WGS so all good.
 
 # SECOND PASS
-# remove bad variants + PPMISI53423
+# remove bad variants + PPMIXXXXX
 plink --bfile FOUNDIN_plink_day0only3 --exclude variant_failure_count_EXCLUDE.txt \
 --remove remove53423.txt --out FOUNDIN_plink_day0only4 --make-bed
 # run merge again
